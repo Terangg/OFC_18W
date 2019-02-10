@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - recycle
+  - recycle_truck
+  - blue_pile
+  - match2
+  - match3
+  - tetrisObj
+  - wall
+  - CounterClockButton
+  - ClockButton
+  - UpButton
+  - DownButton
+  - RightButton
+  - LeftButton
+  - LeftButt
+  - Door
+  - house1
+  - house2
+  - bgHouseOne
+  - bgHouseTwo
+  - bgHouseThree
+  - bgHouseFour
+  - bgHouseFive
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

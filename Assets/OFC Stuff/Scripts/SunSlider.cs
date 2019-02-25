@@ -49,6 +49,6 @@ public class SunSlider : MonoBehaviour
 		val = sunSlider.value;
 		//speed = val;
 		time = val;
-		Debug.Log ("CHANGE VAL: " + val);
+		//Debug.Log ("CHANGE VAL: " + val);
 	}
 }

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 9190650a3feeaf04296d46523acfd37f
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: bed_08_135x190_bedspread
     100002: bed_08_135x190_headboard
@@ -1353,6 +1353,17 @@ ModelImporter:
     102694: window_30_150x150_window 6
     102696: window_30_150x150_window 7
     102698: window_30_150x150_window 8
+    102700: cooker_01_60x60_cooker_MeshPart0
+    102702: cooker_01_60x60_cooker_MeshPart1
+    102704: dp_pl_tree_lombardy_180_MeshPart0
+    102706: dp_pl_tree_lombardy_180_MeshPart1
+    102708: dp_pl_tree_quakingAspen_179_MeshPart0
+    102710: dp_pl_tree_quakingAspen_179_MeshPart1
+    102712: dp_pl_tree_quakingAspen_179_MeshPart2
+    102714: flower 1_MeshPart0
+    102716: flower 1_MeshPart1
+    102718: flower_MeshPart0
+    102720: flower_MeshPart1
     400000: bed_08_135x190_bedspread
     400002: bed_08_135x190_headboard
     400004: bed_08_135x190_mattress
@@ -2703,6 +2714,17 @@ ModelImporter:
     402694: window_30_150x150_window 6
     402696: window_30_150x150_window 7
     402698: window_30_150x150_window 8
+    402700: cooker_01_60x60_cooker_MeshPart0
+    402702: cooker_01_60x60_cooker_MeshPart1
+    402704: dp_pl_tree_lombardy_180_MeshPart0
+    402706: dp_pl_tree_lombardy_180_MeshPart1
+    402708: dp_pl_tree_quakingAspen_179_MeshPart0
+    402710: dp_pl_tree_quakingAspen_179_MeshPart1
+    402712: dp_pl_tree_quakingAspen_179_MeshPart2
+    402714: flower 1_MeshPart0
+    402716: flower 1_MeshPart1
+    402718: flower_MeshPart0
+    402720: flower_MeshPart1
     2100000: roof_by_pieces_['field']
     2100002: 'Material #523'
     2100004: roof_by_pieces_['gable']
@@ -3565,6 +3587,17 @@ ModelImporter:
     2301464: window_30_150x150_window 6
     2301466: window_30_150x150_window 7
     2301468: window_30_150x150_window 8
+    2301470: cooker_01_60x60_cooker_MeshPart0
+    2301472: cooker_01_60x60_cooker_MeshPart1
+    2301474: dp_pl_tree_lombardy_180_MeshPart0
+    2301476: dp_pl_tree_lombardy_180_MeshPart1
+    2301478: dp_pl_tree_quakingAspen_179_MeshPart0
+    2301480: dp_pl_tree_quakingAspen_179_MeshPart1
+    2301482: dp_pl_tree_quakingAspen_179_MeshPart2
+    2301484: flower 1_MeshPart0
+    2301486: flower 1_MeshPart1
+    2301488: flower_MeshPart0
+    2301490: flower_MeshPart1
     3300000: bed_08_135x190_bedspread
     3300002: bed_08_135x190_headboard
     3300004: bed_08_135x190_mattress
@@ -4300,6 +4333,17 @@ ModelImporter:
     3301464: window_30_150x150_window 6
     3301466: window_30_150x150_window 7
     3301468: window_30_150x150_window 8
+    3301470: cooker_01_60x60_cooker_MeshPart0
+    3301472: cooker_01_60x60_cooker_MeshPart1
+    3301474: dp_pl_tree_lombardy_180_MeshPart0
+    3301476: dp_pl_tree_lombardy_180_MeshPart1
+    3301478: dp_pl_tree_quakingAspen_179_MeshPart0
+    3301480: dp_pl_tree_quakingAspen_179_MeshPart1
+    3301482: dp_pl_tree_quakingAspen_179_MeshPart2
+    3301484: flower 1_MeshPart0
+    3301486: flower 1_MeshPart1
+    3301488: flower_MeshPart0
+    3301490: flower_MeshPart1
     4300000: pl_roof_by_pieces_377_0_field
     4300002: pl_roof_by_pieces_378_0_field
     4300004: pl_roof_by_pieces_378_1_field
@@ -5035,12 +5079,21 @@ ModelImporter:
     4301464: picture
     4301466: frame
     4301468: picture
-  externalObjects: {}
+    4301470: dp_pl_tree_quakingAspen_179_MeshPart0
+    4301472: dp_pl_tree_quakingAspen_179_MeshPart1
+    4301474: dp_pl_tree_quakingAspen_179_MeshPart2
+    4301476: dp_pl_tree_lombardy_180_MeshPart0
+    4301478: dp_pl_tree_lombardy_180_MeshPart1
+    4301480: flower_MeshPart0
+    4301482: flower_MeshPart1
+    4301484: cooker_01_60x60_cooker_MeshPart0
+    4301486: cooker_01_60x60_cooker_MeshPart1
+    4301488: flower_MeshPart0
+    4301490: flower_MeshPart1
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -5053,8 +5106,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
-    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -5079,8 +5130,6 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

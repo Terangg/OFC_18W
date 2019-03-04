@@ -43,8 +43,9 @@ public class object_clicker : MonoBehaviour {
 	public Transform bTarget;
 	public Transform nrmlView;
 
-	private bool brdEye = true;
-	private bool nrmlEye = true;
+	public bool brdEye = true;
+	public bool nrmlEye = true;
+	public bool houseView = false;
 	private bool houseSelectedb = false;
 
 	public GameObject normalViewBtn;
@@ -94,6 +95,8 @@ public class object_clicker : MonoBehaviour {
         }
 
 
+
+
 		//btnSwitching ();
 
 
@@ -106,6 +109,7 @@ public class object_clicker : MonoBehaviour {
 			if (hit.collider.tag == name) {
 				go.SetActive (true);
 			}
+
 			if (Input.GetMouseButtonDown (0)) {
 
 
@@ -113,7 +117,7 @@ public class object_clicker : MonoBehaviour {
 
 					if (selectedHouses.Count < 3) {
 						sgo.SetActive (true);
-						houseSelectedb = true;
+						//houseView = true;
 					}
 					if (!selectedHouses.Contains (sgo)) {
 						selectedHouses.Add (sgo);
@@ -125,9 +129,11 @@ public class object_clicker : MonoBehaviour {
 		} else {
 			go.SetActive (false);
 		}
+			
 
-		if (sgo.activeSelf  ) {
+		if (sgo.activeSelf ) {
 			go.SetActive (false);
+			houseView = true;
 			Camera.main.transform.position = Vector3.Slerp (Camera.main.transform.position, targ.position, moveSpeed * 2 * Time.deltaTime);
 			Camera.main.transform.rotation = Quaternion.Slerp (Camera.main.transform.rotation, targ.rotation, moveSpeed * 2 * Time.deltaTime);
 
@@ -138,6 +144,7 @@ public class object_clicker : MonoBehaviour {
 			Camera.main.transform.rotation = Quaternion.Slerp (Camera.main.transform.rotation, bTarget.rotation, viewSpeed * 2 * Time.deltaTime);
 			if (Camera.main.transform.position == bTarget.position) {
 				brdEye = true;
+				//houseView = false;
 			}
 		}
 
@@ -147,6 +154,7 @@ public class object_clicker : MonoBehaviour {
 			Camera.main.transform.rotation = Quaternion.Slerp (Camera.main.transform.rotation, nrmlView.rotation, viewSpeed * 2 * Time.deltaTime);
 			if (Camera.main.transform.position == nrmlView.position) {
 				nrmlEye = true;
+				houseView = false;
 			}
 		}
 

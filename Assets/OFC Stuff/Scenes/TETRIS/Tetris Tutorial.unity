@@ -1045,7 +1045,7 @@ MonoBehaviour:
   lowerText: {fileID: 181942080}
   upperText: {fileID: 261194569}
   degrees: {fileID: 211703502}
-  waitTime: 0.1
+  waitTime: 3
 --- !u!1 &395819632
 GameObject:
   m_ObjectHideFlags: 0

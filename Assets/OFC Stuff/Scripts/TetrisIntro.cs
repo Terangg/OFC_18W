@@ -95,12 +95,13 @@ public class TetrisIntro : MonoBehaviour {
         hint2.SetActive(false);
         // hint 3
         hint3.SetActive(true);
-        yield return new WaitForSeconds(time);
-        hint3.SetActive(false);
         mainTxt.text = "Therefore, the most direct sunlight comes from the South!";
         yield return new WaitForSeconds(time);
+        hint3.SetActive(false);
+        
+        
+        mainTxt.text = "";
 
-        mainTxt.text = "Now, can you fill help fill out this solar panel?";
         sunSlide.SetActive(false);
         topCam.SetActive(false);
         southCam.SetActive(true);

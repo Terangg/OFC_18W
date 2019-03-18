@@ -7,6 +7,7 @@ public class ManageSolarPuzzle : MonoBehaviour {
     //float rotSpeed = 90; //speed to rotate the object
     
     bool isSelected = false; //when the object is selected
+    public bool correctPlace = false;
     public Material[] materials;
     Vector3 initialPosition;
     public GameObject placement; //the placement of the puzzle piece
@@ -14,6 +15,7 @@ public class ManageSolarPuzzle : MonoBehaviour {
     float zPosSolar;
     float zPosPlacement;
     Renderer rend;
+    public GameObject puzzleMaster;
 
     //public GameObject solar;
 
@@ -82,7 +84,7 @@ public class ManageSolarPuzzle : MonoBehaviour {
 
     void OnMouseDrag()
     {
-        if (!isSelected)
+        if (!isSelected && !correctPlace)
         {
             Debug.Log("dragging");
 
@@ -108,7 +110,11 @@ public class ManageSolarPuzzle : MonoBehaviour {
             if (this.gameObject.CompareTag(placement.tag)
                 && zPosSolar < (zPosPlacement + 30)
                 && zPosSolar > (zPosPlacement - 30))
-            { transform.position = placement.transform.position; }
+            {
+                transform.position = placement.transform.position;
+                correctPlace = true;
+                puzzleMaster.GetComponent<CheckPuzzleCompleted>().isPuzzleComplete();
+                }
             else { transform.position = initialPosition; }
         }
         else { transform.position = initialPosition; }

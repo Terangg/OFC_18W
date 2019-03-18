@@ -1,20 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ManageDragDrop : MonoBehaviour {
 
     Vector3 initialPosition;
     public GameObject placement; //the placement of the puzzle piece
-    float dragDistance = 13; //distance to drag mouse
-    float yPosSolar;
-    float yPosPlacement;
+    float dragDistance = 10; //distance to drag mouse
+    float zPosSolar;
+    float zPosPlacement;
     
 
 	// Use this for initialization
 	void Start () {
         initialPosition = gameObject.transform.position;
-        yPosPlacement = placement.transform.eulerAngles.y;
+        zPosPlacement = placement.transform.eulerAngles.y;
+        //dragDistance = Vector3.Distance(transform.position, Camera.main.transform.position);
+        //Debug.Log(dragDistance);
     }
 	
 	// Update is called once per frame
@@ -24,6 +27,7 @@ public class ManageDragDrop : MonoBehaviour {
 
     void OnMouseDrag()
     {
+        Debug.Log("drag");
         Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, dragDistance);
         Vector3 objPos = Camera.main.ScreenToWorldPoint(mousePosition);
 
@@ -31,10 +35,11 @@ public class ManageDragDrop : MonoBehaviour {
     }
 
     void OnMouseUp()
-    {     
-            
+    {
+        Debug.Log("mouse up");
+
         float distance = Vector3.Distance(transform.position, placement.transform.position); //distance between placement and solar
-        yPosSolar = this.transform.eulerAngles.y; //y rotation of the solar object
+        zPosSolar = this.transform.eulerAngles.z; //y rotation of the solar object
 
         if (distance < 0.5)
         {
@@ -42,8 +47,8 @@ public class ManageDragDrop : MonoBehaviour {
             Debug.Log("this tag" + this.tag);
             Debug.Log("other tag" + placement.tag);
             if (this.gameObject.CompareTag(placement.tag)
-                && yPosSolar < (yPosPlacement + 30)
-                && yPosSolar > (yPosPlacement - 30)) 
+                && zPosSolar < (zPosPlacement + 30)
+                && zPosSolar > (zPosPlacement - 30)) 
             { transform.position = placement.transform.position; }
             else { transform.position = initialPosition; }
         }

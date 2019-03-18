@@ -11,7 +11,14 @@ public class TetrisIntro : MonoBehaviour {
     public GameObject hint1;
     public GameObject hint2;
     public GameObject hint3;
-
+    public GameObject hint1btn;
+    public GameObject hint2btn;
+    public GameObject hint3btn;
+    public GameObject hintX;
+    public GameObject giveHint;
+    public GameObject topCam;
+    public GameObject southCam;
+    
 
     public float waitTime = 3f;
 
@@ -24,7 +31,15 @@ public class TetrisIntro : MonoBehaviour {
         hint1.SetActive(false);
         hint2.SetActive(false);
         hint3.SetActive(false);
+        hint1btn.SetActive(false);
+        hint2btn.SetActive(false);
+        hint3btn.SetActive(false);
+        hintX.SetActive(false);
+        giveHint.SetActive(false);
+        southCam.SetActive(false);
+        
 
+        topCam.SetActive(true);
         StartCoroutine(startTutorial(waitTime));
     }
 	
@@ -53,13 +68,14 @@ public class TetrisIntro : MonoBehaviour {
     public void chooseSouth()
     {
         directionBtns.SetActive(false);
+        giveHint.SetActive(false);
         mainTxt.text = "Right! Most of the sunlight is from south!";
         StartCoroutine(choseSouth(waitTime));
     }
 
     public void chooseNotSouth()
     {
-        mainTxt.text = "Mmm, not quite. Here's a hint";
+        
         trialNum++;
         StartCoroutine(choseNotSouth(waitTime));
     }
@@ -79,60 +95,151 @@ public class TetrisIntro : MonoBehaviour {
         hint2.SetActive(false);
         // hint 3
         hint3.SetActive(true);
-        mainTxt.text = "Therefore, the most direct sunlight comes from the South!";
         yield return new WaitForSeconds(time);
         hint3.SetActive(false);
+        mainTxt.text = "Therefore, the most direct sunlight comes from the South!";
+        yield return new WaitForSeconds(time);
+
+        mainTxt.text = "Now, can you fill help fill out this solar panel?";
+        sunSlide.SetActive(false);
+        topCam.SetActive(false);
+        southCam.SetActive(true);
+        yield return new WaitForSeconds(time);
     }
 
     private IEnumerator choseNotSouth(float time)
     {
         directionBtns.SetActive(false);
-        yield return new WaitForSeconds(time);
+        // slider & txt off 
+        mainTxt.text = "";
+        sunSlide.SetActive(false);
+        giveHint.SetActive(false);
 
         // show hint 1
         if (trialNum == 1)
         {
-            // slider & txt off 
+
+            mainTxt.text = "Mmm, not quite. Here's a hint";
+            yield return new WaitForSeconds(time);
             mainTxt.text = "";
-            sunSlide.SetActive(false); 
 
             hint1.SetActive(true);
+            hint1btn.SetActive(true);
             yield return new WaitForSeconds(time);
             hint1.SetActive(false);
+            hint1btn.SetActive(false);
 
-            // slider & txt off 
-            mainTxt.text = "Try again, which way should the solar panels face?";
-            sunSlide.SetActive(true);
+            
+            
+        }
+        // hint 2
+        if (trialNum == 2)
+        {
+
+            mainTxt.text = "Mmm, not quite. Here's another hint";
+            yield return new WaitForSeconds(time);
+            mainTxt.text = "";
+
+            hint2.SetActive(true);
+            hint2btn.SetActive(true);
+            yield return new WaitForSeconds(time);
+            hint2.SetActive(false);
+            hint2btn.SetActive(false);
+
+           
+        }
+        //hint 3
+        if (trialNum == 3)
+        {
+            mainTxt.text = "Mmm, not quite. Here's the final hint";
+            yield return new WaitForSeconds(time);
+            mainTxt.text = "";
+
+            hint3.SetActive(true);
+            hint3btn.SetActive(true);
+            yield return new WaitForSeconds(time);
+            hint3.SetActive(false);
+            hint3btn.SetActive(false);
+
+        }
+        
+        mainTxt.text = "Try again, which way should the solar panels face? Click the '?' to see the hint.";
+        sunSlide.SetActive(true);
+        giveHint.SetActive(true);
+        directionBtns.SetActive(true);
+    }
+
+    public void giveHintPls()
+    {
+        if (trialNum == 1)
+        {
+            hint1.SetActive(true);
+            hint1btn.SetActive(true);
+            hint1btn.GetComponent<Button>().interactable = false;
+            
         }
         if (trialNum == 2)
         {
-            // slider & txt off 
-            mainTxt.text = "";
-            sunSlide.SetActive(false);
-
             hint2.SetActive(true);
-            yield return new WaitForSeconds(time);
-            hint2.SetActive(false);
-
-            // slider & txt off 
-            mainTxt.text = "Try again, which way should the solar panels face?";
-            sunSlide.SetActive(true);
+            hint1btn.SetActive(true);
+            hint2btn.SetActive(true);
+            hint2btn.GetComponent<Button>().interactable = false;
+            hint1btn.GetComponent<Button>().interactable = true;
+            
         }
-        if (trialNum == 3)
+        if (trialNum >= 3)
         {
-            // slider & txt off 
-            mainTxt.text = "";
-            sunSlide.SetActive(false);
-
             hint3.SetActive(true);
-            yield return new WaitForSeconds(time);
-            hint3.SetActive(false);
-
-            // slider & txt off 
-            mainTxt.text = "Try again, which way should the solar panels face?";
-            sunSlide.SetActive(true);
+            hint1btn.SetActive(true);
+            hint2btn.SetActive(true);
+            hint3btn.SetActive(true);
+            hint3btn.GetComponent<Button>().interactable = false;
+            hint1btn.GetComponent<Button>().interactable = true;
+            hint2btn.GetComponent<Button>().interactable = true;
         }
+        hintX.SetActive(true);
+        giveHint.SetActive(false);
+    }
 
-        directionBtns.SetActive(true);
+    public void showHint1()
+    {
+        hint1.SetActive(true);
+        hint2.SetActive(false);
+        hint3.SetActive(false);
+        hint1btn.GetComponent<Button>().interactable = false;
+        hint2btn.GetComponent<Button>().interactable = true;
+        hint3btn.GetComponent<Button>().interactable = true;
+    }
+
+    public void showHint2()
+    {
+        hint2.SetActive(true);
+        hint1.SetActive(false);
+        hint3.SetActive(false);
+        hint2btn.GetComponent<Button>().interactable = false;
+        hint1btn.GetComponent<Button>().interactable = true;
+        hint3btn.GetComponent<Button>().interactable = true;
+
+    }
+    public void showHint3()
+    {
+        hint3.SetActive(true);
+        hint1.SetActive(false);
+        hint2.SetActive(false);
+        hint3btn.GetComponent<Button>().interactable = false;
+        hint1btn.GetComponent<Button>().interactable = true;
+        hint2btn.GetComponent<Button>().interactable = true;
+
+    }
+    public void closeHints()
+    {
+        hint1.SetActive(false);
+        hint2.SetActive(false);
+        hint3.SetActive(false);
+        hint1btn.SetActive(false);
+        hint2btn.SetActive(false);
+        hint3btn.SetActive(false);
+        hintX.SetActive(false);
+        giveHint.SetActive(true);
     }
 }

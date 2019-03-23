@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SuburbNeighborhoodHousePack/Scenes/DayHouseInteriorExterior.unity
+- path: Assets/OFC Stuff/Scenes/TETRIS/TetrisIntro.unity
   isLoaded: 1
   isActive: 1

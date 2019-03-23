@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ManageRotate : MonoBehaviour {
 
-    float rotSpeed = 300; //speed to rotate the object
-    private GameObject canvas;
+    float rotSpeed = 90; //speed to rotate the object
+    private GameObject rotationBtns;
     bool isSelected = false; //when the object is selected
     Material m_Material;
     //public GameObject solar;
@@ -14,9 +14,9 @@ public class ManageRotate : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        canvas.SetActive(false);
+        rotationBtns.SetActive(false);
         m_Material = GetComponent<Renderer>().material;
-        canvas =  GameObject.Find("Canvas");
+        rotationBtns =  GameObject.Find("RotationBtns");
 
     }
 
@@ -52,14 +52,16 @@ public class ManageRotate : MonoBehaviour {
         if(isSelected == false) //if the object is not selected
         {
             isSelected = true; //object becomes selected
-            canvas.SetActive(true);
+            
             m_Material.color = Color.green;
         }
         else
         {
             isSelected = false; //object becomes selected
-            canvas.SetActive(false);
+            
             m_Material.color = Color.gray;
         }
     }
+
+    
 }

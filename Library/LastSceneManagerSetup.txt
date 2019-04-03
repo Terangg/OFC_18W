@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/OFC Stuff/Scenes/TETRIS/SolarBrazil.unity
+- path: Assets/OFC Stuff/Scenes/TETRIS/Puzzle_Mechanic2.unity
   isLoaded: 1
   isActive: 1

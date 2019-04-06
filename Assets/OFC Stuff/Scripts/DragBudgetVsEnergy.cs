@@ -8,14 +8,20 @@ public class DragBudgetVsEnergy : MonoBehaviour {
     public GameObject placement; //the placement of the puzzle piece
     float dragDistance = 9.1f; //distance to drag mouse
     float zPosSolar;
-    //float zPosPlacement;
+    private Vector3 objPos;
+    private GameObject puzzleCreator;
 
+    private void Awake()
+    {
+        puzzleCreator = GameObject.Find("PuzzleCreatorScript");
+    }
 
     // Use this for initialization
     void Start()
     {
         initialPosition = gameObject.transform.position;
-        //zPosPlacement = placement.transform.eulerAngles.y;
+        
+
         //dragDistance = Vector3.Distance(transform.position, Camera.main.transform.position);
         //Debug.Log(dragDistance);
     }
@@ -28,25 +34,30 @@ public class DragBudgetVsEnergy : MonoBehaviour {
 
     void OnMouseDrag()
     {
-        Debug.Log("drag");
         Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, dragDistance);
-        Vector3 objPos = Camera.main.ScreenToWorldPoint(mousePosition);
-
+        objPos = Camera.main.ScreenToWorldPoint(mousePosition);
         transform.position = objPos;
     }
 
+   
+
     void OnMouseUp()
     {
-        Debug.Log("mouse up");
+        //Find the closest Vector3 of the grid, if it returns (0,0,0) -> nothing is close
 
-        float distance = Vector3.Distance(transform.position, placement.transform.position); //distance between placement and solar
-        //zPosSolar = this.transform.eulerAngles.z; //y rotation of the solar object
-        Debug.Log(distance);
-        if (distance < 8)
+        Vector3 closest = puzzleCreator.GetComponent<CreatePuzzle>().GetNearestPointOnGrid(transform.position);
+       
+        Debug.Log(closest);
+
+        
+        if ( closest == new Vector3(0,0,0))
         {
-
-            transform.position = new Vector3(placement.transform.position.x, transform.position.y, transform.position.z);
-            }
-        else { transform.position = initialPosition; }
+            transform.position = initialPosition;          
+        }
+        else {
+            transform.position = closest;
+        }
     }
+
+    
 }

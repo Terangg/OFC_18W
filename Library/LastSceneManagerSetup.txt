@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/OFC Stuff/Scenes/TETRIS/Puzzle_Mechanic2.unity
+- path: Assets/OFC Stuff/Scenes/map_scenes/kits_scene.unity
   isLoaded: 1
   isActive: 1

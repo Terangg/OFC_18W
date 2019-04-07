@@ -42,17 +42,25 @@ public class blkScn : MonoBehaviour
     void Update()
     {
     	ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-    	houseSelector("HOUSE1", house_1);
-    	houseSelector("HOUSE2", house_2);
-    	houseSelector("HOUSE3", house_3);
-    	houseSelector("HOUSE4", house_4);
-    	houseSelector("HOUSE5", house_5);
+    	houseSelector("HOUSE1", house_1, infoBox_1);
+    	houseSelector("HOUSE2", house_2, infoBox_2);
+    	houseSelector("HOUSE3", house_3, infoBox_3);
+    	houseSelector("HOUSE4", house_4, infoBox_4);
+    	houseSelector("HOUSE5", house_5, infoBox_5);
 
         
     }
 
-    private void houseSelector(string name, Transform target) {
+    private void houseSelector(string name, Transform target, GameObject infoBox) {
     	if (Physics.Raycast (ray, out hit) ) {
+    		//!! COMPUTER BUILD !!//
+    		if (hit.collider.tag == name ) {
+    			infoBox.SetActive(true);
+    		} else {
+    			infoBox.SetActive(false);
+    		}
+    		//!! COMPUTER BUILD !!//
+
     		if (Input.GetMouseButtonDown (0)) {
 				if (hit.collider.tag == name ) {
 					Debug.Log(hit.collider.tag);

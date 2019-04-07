@@ -7,11 +7,12 @@ public class CreatePuzzle : MonoBehaviour {
     public GameObject parent;
     public int row;
     public int col;
+    public float space = 1f;
     Vector3 pos;
     Vector3 newPos;
     Vector3 parentPos;
     Vector3[] posArray;
-    float space = 1.5f;
+    
     int c;
     int r;
     int i = 0;

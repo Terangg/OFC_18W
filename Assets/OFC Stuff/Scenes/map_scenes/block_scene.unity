@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4378715, g: 0.4858005, b: 0.5660793, a: 1}
+  m_IndirectSpecularColor: {r: 0.43749014, g: 0.4853112, b: 0.5655861, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1061,6 +1061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 255853668}
+  - component: {fileID: 255853669}
   m_Layer: 0
   m_Name: HOUSE_1
   m_TagString: Untagged
@@ -1083,6 +1084,19 @@ Transform:
   m_Father: {fileID: 1105961684}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 150.265, y: 89.99999, z: 180}
+--- !u!114 &255853669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255853667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119e08f4355c8a44ca413d14b6db1b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
 --- !u!1 &256267304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,6 +1591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 316053470}
+  - component: {fileID: 316053471}
   m_Layer: 0
   m_Name: HOUSE_3
   m_TagString: Untagged
@@ -1599,6 +1614,19 @@ Transform:
   m_Father: {fileID: 1105961684}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 40.964, y: 0, z: 0}
+--- !u!114 &316053471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316053469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119e08f4355c8a44ca413d14b6db1b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
 --- !u!1 &352619084
 GameObject:
   m_ObjectHideFlags: 0
@@ -5557,6 +5585,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1869492893}
+    - target: {fileID: 1444538684100060140, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1573269479}
     - target: {fileID: 1444538684010363341, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5577,6 +5610,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1869492893}
+    - target: {fileID: 1444538684010363329, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1573269479}
     - target: {fileID: 1444538684877088462, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5597,6 +5635,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1869492893}
+    - target: {fileID: 1444538684877088450, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1573269479}
     - target: {fileID: 1444538684021365245, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5617,6 +5660,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1869492893}
+    - target: {fileID: 1444538684021365233, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1573269479}
     - target: {fileID: 1444538685746185521, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5637,6 +5685,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1869492893}
+    - target: {fileID: 1444538685746185525, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1573269479}
     - target: {fileID: 1444538685557021604, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5657,6 +5710,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1869492893}
+    - target: {fileID: 1444538685557021624, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1573269479}
     - target: {fileID: 1444538685606842919, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5777,6 +5835,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1107067593}
+    - target: {fileID: 1444538684100060140, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1741240090}
     - target: {fileID: 1444538684010363341, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5797,6 +5860,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1107067593}
+    - target: {fileID: 1444538684010363329, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1741240090}
     - target: {fileID: 1444538684877088462, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5817,6 +5885,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1107067593}
+    - target: {fileID: 1444538684877088450, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1741240090}
     - target: {fileID: 1444538684021365245, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5837,6 +5910,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1107067593}
+    - target: {fileID: 1444538684021365233, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1741240090}
     - target: {fileID: 1444538685746185521, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5857,6 +5935,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1107067593}
+    - target: {fileID: 1444538685746185525, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1741240090}
     - target: {fileID: 1444538685557021604, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5877,6 +5960,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1107067593}
+    - target: {fileID: 1444538685557021624, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1741240090}
     - target: {fileID: 1444538685606842919, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6978,6 +7066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1485711912}
+  - component: {fileID: 1485711913}
   m_Layer: 0
   m_Name: HOUSE_4
   m_TagString: Untagged
@@ -7000,6 +7089,19 @@ Transform:
   m_Father: {fileID: 1105961684}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 40.964, y: 0, z: 0}
+--- !u!114 &1485711913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485711911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119e08f4355c8a44ca413d14b6db1b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
 --- !u!1 &1520338846
 GameObject:
   m_ObjectHideFlags: 0
@@ -7216,6 +7318,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1840211642}
+    - target: {fileID: 1444538684100060140, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 255853669}
     - target: {fileID: 1444538684010363341, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7236,6 +7343,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1840211642}
+    - target: {fileID: 1444538684010363329, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 255853669}
     - target: {fileID: 1444538684877088462, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7256,6 +7368,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1840211642}
+    - target: {fileID: 1444538684877088450, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 255853669}
     - target: {fileID: 1444538684021365245, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7276,6 +7393,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1840211642}
+    - target: {fileID: 1444538684021365233, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 255853669}
     - target: {fileID: 1444538685746185521, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7296,6 +7418,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1840211642}
+    - target: {fileID: 1444538685746185525, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 255853669}
     - target: {fileID: 1444538685557021604, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7316,6 +7443,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1840211642}
+    - target: {fileID: 1444538685557021624, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 255853669}
     - target: {fileID: 1444538685606842919, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7514,6 +7646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1573269478}
+  - component: {fileID: 1573269479}
   m_Layer: 0
   m_Name: HOUSE_2
   m_TagString: Untagged
@@ -7536,6 +7669,19 @@ Transform:
   m_Father: {fileID: 1105961684}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 40.964, y: 0, z: 0}
+--- !u!114 &1573269479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573269477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119e08f4355c8a44ca413d14b6db1b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
 --- !u!1 &1573902745
 GameObject:
   m_ObjectHideFlags: 0
@@ -7730,6 +7876,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 401741489}
+    - target: {fileID: 1444538684100060140, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1485711913}
     - target: {fileID: 1444538684010363341, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7750,6 +7901,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 401741489}
+    - target: {fileID: 1444538684010363329, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1485711913}
     - target: {fileID: 1444538684877088462, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7770,6 +7926,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 401741489}
+    - target: {fileID: 1444538684877088450, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1485711913}
     - target: {fileID: 1444538684021365245, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7790,6 +7951,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 401741489}
+    - target: {fileID: 1444538684021365233, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1485711913}
     - target: {fileID: 1444538685746185521, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7810,6 +7976,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 401741489}
+    - target: {fileID: 1444538685746185525, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1485711913}
     - target: {fileID: 1444538685557021604, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7830,6 +8001,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 401741489}
+    - target: {fileID: 1444538685557021624, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 1485711913}
     - target: {fileID: 1444538685606842919, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8512,6 +8688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1741240089}
+  - component: {fileID: 1741240090}
   m_Layer: 0
   m_Name: HOUSE_5
   m_TagString: Untagged
@@ -8534,6 +8711,19 @@ Transform:
   m_Father: {fileID: 1105961684}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 149.476, y: 89.99999, z: 180}
+--- !u!114 &1741240090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741240088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119e08f4355c8a44ca413d14b6db1b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
 --- !u!1001 &1745493440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9839,6 +10029,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1734546284}
+    - target: {fileID: 1444538684100060140, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 316053471}
     - target: {fileID: 1444538684010363341, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9859,6 +10054,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1734546284}
+    - target: {fileID: 1444538684010363329, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 316053471}
     - target: {fileID: 1444538684877088462, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9879,6 +10079,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1734546284}
+    - target: {fileID: 1444538684877088450, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 316053471}
     - target: {fileID: 1444538684021365245, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9899,6 +10104,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1734546284}
+    - target: {fileID: 1444538684021365233, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 316053471}
     - target: {fileID: 1444538685746185521, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9919,6 +10129,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1734546284}
+    - target: {fileID: 1444538685746185525, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 316053471}
     - target: {fileID: 1444538685557021604, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9939,6 +10154,11 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1734546284}
+    - target: {fileID: 1444538685557021624, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: engScore
+      value: 
+      objectReference: {fileID: 316053471}
     - target: {fileID: 1444538685606842919, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
         type: 3}
       propertyPath: m_LocalPosition.x

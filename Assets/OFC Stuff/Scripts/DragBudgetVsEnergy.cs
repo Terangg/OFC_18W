@@ -5,16 +5,13 @@ using UnityEngine;
 public class DragBudgetVsEnergy : MonoBehaviour {
 
     Vector3 initialPosition;
-    public GameObject placement; //the placement of the puzzle piece
+    
     float dragDistance = 9.1f; //distance to drag mouse
     float zPosSolar;
     private Vector3 objPos;
-    private GameObject puzzleCreator;
+    public GameObject PuzzleCreatorScript;
 
-    private void Awake()
-    {
-        puzzleCreator = GameObject.Find("PuzzleCreatorScript");
-    }
+    
 
     // Use this for initialization
     void Start()
@@ -45,11 +42,8 @@ public class DragBudgetVsEnergy : MonoBehaviour {
     {
         //Find the closest Vector3 of the grid, if it returns (0,0,0) -> nothing is close
 
-        Vector3 closest = puzzleCreator.GetComponent<CreatePuzzle>().GetNearestPointOnGrid(transform.position);
+        Vector3 closest = PuzzleCreatorScript.GetComponent<CreatePuzzle>().GetNearestPointOnGrid(transform.position);
        
-        Debug.Log(closest);
-
-        
         if ( closest == new Vector3(0,0,0))
         {
             transform.position = initialPosition;          

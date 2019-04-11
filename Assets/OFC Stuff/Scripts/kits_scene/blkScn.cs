@@ -54,18 +54,19 @@ public class blkScn : MonoBehaviour
     private void houseSelector(string name, Transform target, GameObject infoBox) {
     	if (Physics.Raycast (ray, out hit) ) {
     		//!! COMPUTER BUILD !!//
-    		if (hit.collider.tag == name ) {
+    		if (hit.collider.tag == name && Camera.main.transform.position != target.position && isBird ) {
     			infoBox.SetActive(true);
     		} else {
     			infoBox.SetActive(false);
     		}
     		//!! COMPUTER BUILD !!//
 
-    		if (Input.GetMouseButtonDown (0)) {
+    		if (Input.GetMouseButtonDown (0) && isBird) {
 				if (hit.collider.tag == name ) {
 					Debug.Log(hit.collider.tag);
 					Camera.main.transform.position = target.position;
 					Camera.main.transform.rotation = target.rotation;
+					isBird = false;
 					brdBtn.SetActive(true);
 				}
 			}
@@ -76,6 +77,7 @@ public class blkScn : MonoBehaviour
     public void mainView() {
     	Camera.main.transform.position = mainTrans.position;
 		Camera.main.transform.rotation = mainTrans.rotation;
+		isBird = true;
 		brdBtn.SetActive(false);
     }
 

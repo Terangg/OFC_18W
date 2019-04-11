@@ -26,6 +26,12 @@ TagManager:
   - bgHouseThree
   - bgHouseFour
   - bgHouseFive
+  - panels
+  - HOUSE1
+  - HOUSE2
+  - HOUSE3
+  - HOUSE4
+  - HOUSE5
   layers:
   - Default
   - TransparentFX

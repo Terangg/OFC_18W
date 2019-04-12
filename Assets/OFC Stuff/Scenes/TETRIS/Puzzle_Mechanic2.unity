@@ -41517,5 +41517,10 @@ PrefabInstance:
       propertyPath: PuzzleCreatorScript
       value: 
       objectReference: {fileID: 1043802257}
+    - target: {fileID: 1444538685532618586, guid: ea0d64bbaf8762c41a384d3f7fc4c54e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea0d64bbaf8762c41a384d3f7fc4c54e, type: 3}

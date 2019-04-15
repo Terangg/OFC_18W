@@ -745,7 +745,7 @@ GameObject:
   - component: {fileID: 1444538685746185526}
   - component: {fileID: 1444538685746185527}
   - component: {fileID: 1444538685746185524}
-  - component: {fileID: 1444538685746185525}
+  - component: {fileID: 8883375924766304262}
   m_Layer: 0
   m_Name: 3by3
   m_TagString: Untagged
@@ -834,7 +834,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.691533, y: 2.8107862, z: 5.229251}
   m_Center: {x: -0.4656187, y: -0.45752966, z: 0.20296252}
---- !u!114 &1444538685746185525
+--- !u!114 &8883375924766304262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -843,11 +843,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1444538685746185482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de0d9336ddd083746972f041a1e12873, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c2a0ffd9dd80934bb967ba0b68674e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleCreatorScript: {fileID: 0}
-  engScore: {fileID: 0}
+  BudgetSystem: {fileID: 0}
+  Prefab: {fileID: 1444538685746185482}
 --- !u!1 &1444538685746944391
 GameObject:
   m_ObjectHideFlags: 0

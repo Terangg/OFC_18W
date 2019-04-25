@@ -82,7 +82,7 @@ public class DragAndBudget : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            StartCoroutine(BudgetSystem.GetComponent<BudgetSystem>().NoMoney());
+            //StartCoroutine(BudgetSystem.GetComponent<BudgetSystem>().NoMoney());
         }
     }
 }

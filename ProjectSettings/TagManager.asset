@@ -32,6 +32,11 @@ TagManager:
   - HOUSE3
   - HOUSE4
   - HOUSE5
+  - 12000
+  - 3000
+  - 250
+  - 1000
+  - 500
   layers:
   - Default
   - TransparentFX

@@ -75,13 +75,14 @@ public class DragAndBudget : MonoBehaviour
             else
             {
                 transform.position = closest;
-                BudgetSystem.GetComponent<BudgetSystem>().UpdateBudget(gameObject.tag);
+                StartCoroutine(BudgetSystem.GetComponent<BudgetSystem>().UpdateBudget(gameObject.tag));
                 //engScore.count++;
             }
         }
         else
         {
             Destroy(gameObject);
+            StartCoroutine(BudgetSystem.GetComponent<BudgetSystem>().NoMoney());
         }
     }
 }

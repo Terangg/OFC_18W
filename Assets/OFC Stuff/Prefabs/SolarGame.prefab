@@ -107,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444538685606842938}
   m_LocalRotation: {x: 0.2705981, y: -0.6532815, z: 0.2705981, w: 0.6532815}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.14, y: -1.14, z: -4.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 825397660}
@@ -256,17 +256,17 @@ PrefabInstance:
     - target: {fileID: 4449724766805771836, guid: ef59f4b6749ffb9409cc4162aaa28ae0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.29
+      value: 2.09
       objectReference: {fileID: 0}
     - target: {fileID: 4449724766805771836, guid: ef59f4b6749ffb9409cc4162aaa28ae0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.08
+      value: -1.86
       objectReference: {fileID: 0}
     - target: {fileID: 4449724766805771836, guid: ef59f4b6749ffb9409cc4162aaa28ae0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.14
+      value: 9.28
       objectReference: {fileID: 0}
     - target: {fileID: 4449724766805771836, guid: ef59f4b6749ffb9409cc4162aaa28ae0,
         type: 3}
@@ -399,14 +399,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2893927251184946151, guid: 0c6f41db36b51e84cad90586c10a86d6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.74
-      objectReference: {fileID: 0}
     - target: {fileID: 4016263056289013789, guid: 0c6f41db36b51e84cad90586c10a86d6,
         type: 3}
       propertyPath: budgetTxt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016263056289013789, guid: 0c6f41db36b51e84cad90586c10a86d6,
+        type: 3}
+      propertyPath: subtractBudgetTxt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016263056289013789, guid: 0c6f41db36b51e84cad90586c10a86d6,
+        type: 3}
+      propertyPath: ending
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016263056289013789, guid: 0c6f41db36b51e84cad90586c10a86d6,
+        type: 3}
+      propertyPath: SolarButtons
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016263056289013789, guid: 0c6f41db36b51e84cad90586c10a86d6,
+        type: 3}
+      propertyPath: YesNoButtons
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []

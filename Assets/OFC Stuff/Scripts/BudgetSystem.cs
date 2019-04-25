@@ -8,6 +8,9 @@ public class BudgetSystem : MonoBehaviour
 
     public Text budgetTxt;
     public Text subtractBudgetTxt;
+    public Text ending;
+    public GameObject SolarButtons;
+    public GameObject YesNoButtons;
 
     int budget = 90000;
 
@@ -16,12 +19,20 @@ public class BudgetSystem : MonoBehaviour
     {
         budgetTxt.text = "Budget: " + budget;
         subtractBudgetTxt.text = "";
+        ending.text = "";
+        SolarButtons.SetActive(false);
+        YesNoButtons.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(budget == 0)
+        {
+            budgetTxt.text = "Budget: 0";
+            budget = -1;
+            StartCoroutine(NoMoney());
+        }
     }
 
     public IEnumerator UpdateBudget(string tag)
@@ -70,13 +81,25 @@ public class BudgetSystem : MonoBehaviour
 
     
     public IEnumerator NoMoney(){
-        subtractBudgetTxt.text = "You have no more money. Want to donate power to the grid?" + 
-            " This will earn you electricity credits.";
-        yield return new WaitForSeconds(3f);
-        
+        ending.text = "You have ran out of money";
+        SolarButtons.SetActive(true);
+        yield return new WaitForSeconds(1f);
+           
 
     }
-        
+
+    public void RestartGame()
+    {
+        //reset game
+    }
+
+    public void ContinueGame()
+    {
+        SolarButtons.SetActive(false);
+        ending.text = "Would you like to connect your solar panels to the grid?";
+        YesNoButtons.SetActive(true);
+    }
+
 
 
 }

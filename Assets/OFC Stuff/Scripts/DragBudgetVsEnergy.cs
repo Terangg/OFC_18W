@@ -10,7 +10,6 @@ public class DragBudgetVsEnergy : MonoBehaviour {
     float zPosSolar;
     private Vector3 objPos;
     public GameObject PuzzleCreatorScript;
-    public energyScoring engScore;
 
     
 
@@ -47,12 +46,10 @@ public class DragBudgetVsEnergy : MonoBehaviour {
        
         if ( closest == new Vector3(0,0,0))
         {
-            transform.position = initialPosition;
-
+            transform.position = initialPosition;          
         }
         else {
             transform.position = closest;
-            engScore.count++;
         }
     }
 
